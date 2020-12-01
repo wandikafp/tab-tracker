@@ -16,6 +16,7 @@
     <v-spacer></v-spacer>
     <v-toolbar-items>
       <v-btn
+        v-if="!$store.state.isUserLoggedIn"
         flat
         dark
         :to="{
@@ -27,6 +28,7 @@
 
     <v-toolbar-items>
       <v-btn
+        v-if="!$store.state.isUserLoggedIn"
         flat
         dark
         :to="{

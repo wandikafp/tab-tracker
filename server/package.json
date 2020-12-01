@@ -20,7 +20,7 @@
     "jsonwebtoken": "^8.0.0",
     "morgan": "^1.9.1",
     "sequelize": "^5.10.2",
-    "sqlite3": "^4.0.9"
+    "sqlite3": "^5.0.0"
   },
   "devDependencies": {
     "eslint": "^6.1.0",
