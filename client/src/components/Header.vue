@@ -40,8 +40,10 @@
 
     <v-toolbar-items>
       <v-btn
+        v-if="$store.state.isUserLoggedIn"
         flat
         dark
+        @click="logout"
         >
         Logout
       </v-btn>
@@ -51,10 +53,18 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  methods: {
+    logout () {
+      this.$store.dispatch('setToken', null)
+      this.$store.dispatch('setToken', null)
+      this.$router.push({
+        name: 'Home'
+      })
     }
   }
 }
