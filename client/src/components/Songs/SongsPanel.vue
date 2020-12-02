@@ -12,7 +12,7 @@
       right
       middle
       fab>
-      <v-icon>add</v-icon>
+      <v-icon>+</v-icon>
     </v-btn>
 
     <div
@@ -61,8 +61,6 @@ export default {
     return {
       songs: null
     }
-  },
-  methods: {
   },
   async mounted () {
     this.songs = (await SongService.index()).data
